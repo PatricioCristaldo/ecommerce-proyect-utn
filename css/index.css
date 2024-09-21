@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 1rem 2rem;
+}
+
+.nav{    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.logo {
+    color: white;
+}
+.nav-links a {
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.btn-login {
+    background-color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+
+.cart-icon img {
+    width: 20px;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(../img/section1/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* padding: 5rem 10%; */
+    background-color: #1c1c1e;
+    color: #f0e6d6;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 22%;
+}
+
+.hero-content h3 {
+    font-family: 'Serif', sans-serif;
+    font-size: 1.5rem;
+    color: #d5c4a1;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Georgia', serif;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 90%;
+    margin-bottom: 2rem;
+    color: #b5a99e;
+}
+
+.btn-discover {
+    background-color: #d5c4a1;
+    color: #1c1c1e;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.btn-discover:hover {
+    background-color: #c2a884;
+    color: #1c1c1e;
+}
+
+.hero-image img {
+    max-width: 50vw;
+    height: 150vh;
+}
+
+.hero-brands {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-brands p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d5c4a1;
+}
+
+/* Partners Section (Brand logos below the hero section) */
+.partners {
+    padding: 2rem 0;
+    background-color: #2a2a2c;
+    text-align: center;
+}
+
+.partner-logos img {
+    width: 120px;
+    margin: 0 1
+}
+
+/* Products Section */
+.products {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 150px;
+    height: 200px;
+}
+
+.btn-buy {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+/* Promo Section */
+.promo {
+    padding: 2rem 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.promo-card {
+    display: inline-block;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-column h4 {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 0.5rem;
+}
