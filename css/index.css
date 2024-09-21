@@ -65,16 +65,21 @@ header {
     background-size: cover;
     background-position: center;
     display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    /* padding: 5rem 10%; */
     background-color: #1c1c1e;
     color: #f0e6d6;
     position: relative;
+    height: 100vh;
+    justify-content: center;
 }
 
 .hero-content {
-    max-width: 22%;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    z-index: 2;
+    max-width: 600px;
 }
 
 .hero-content h3 {
@@ -118,9 +123,12 @@ header {
     color: #1c1c1e;
 }
 
+/* Imagen en la esquina derecha */
 .hero-image img {
-    max-width: 50vw;
-    height: 150vh;
+    width: 50vw; /* Ajustamos el ancho de la imagen */
+    height: 100vh;
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    z-index: 1; /* Aseguramos que la imagen esté debajo del contenido */
 }
 
 .hero-brands {
@@ -133,6 +141,7 @@ header {
     font-size: 1.2rem;
     text-align: center;
     color: #fff;
+    z-index: 3; /* Esto coloca la sección de marcas por encima de la imagen */
 }
 
 .hero-brands p {
@@ -140,6 +149,7 @@ header {
     font-weight: bold;
     color: #d5c4a1;
 }
+
 
 /* Partners Section (Brand logos below the hero section) */
 .partners {
